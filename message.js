@@ -5,5 +5,6 @@ const button = document.querySelector("#button");
 button.addEventListener('click', () => {
     let list = document.createElement('li');
     list.innerHTML = textbox.value;
-    messages.appendChild(list)
+    messages.appendChild(list);
+    textbox.value = '';
 })
